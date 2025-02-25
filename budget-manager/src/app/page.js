@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Link from 'next/link';
+import NavigationBar from './components/navigation';
 
 export default function Home() {
   return (
@@ -16,13 +16,14 @@ export default function Home() {
       <p className={styles.description}>
         This is a simple budget management application.
       </p>
+      <NavigationBar />
       <h1>Budgets</h1>
       <ul>
         <li>Budget 1</li>
         <li>Budget 2</li>
         <li>Budget 3</li>
       </ul>
-      <Link href={`/budgeter`}>Go to other page</Link>
+      
     </div>
   );
 }
